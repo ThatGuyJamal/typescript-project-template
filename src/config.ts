@@ -11,6 +11,7 @@ export const configValues = {
 	logFiles: true,
 	fixme: dev ? process.env.fixme! : process.env.fixme!,
 	admin_ids: new Set(["370637638820036608"]),
+	mongodb_uri: "mongodb://localhost:27017/test",
 };
 
 export type IAppConfig = typeof configValues;

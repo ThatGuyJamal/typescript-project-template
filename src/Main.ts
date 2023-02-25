@@ -1,3 +1,4 @@
+import { MongodbDatabase } from "database/mongodb/mongo";
 import { AppConfig, configValues, IAppConfig } from "./config";
 import { Utils } from "./lib/utils";
 
@@ -9,9 +10,13 @@ export class Main {
 	public readonly appConfig: IAppConfig;
 	/** Common utilities for the app */
 	public readonly utils: Utils;
+	public databases
 	public constructor() {
 		this.appConfig = new AppConfig(configValues).data;
 		this.utils = new Utils(this);
+		this.databases = {
+			mongodb: new MongodbDatabase()
+		}
 	}
 }
 
