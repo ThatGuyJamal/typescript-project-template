@@ -29,7 +29,7 @@
   "dependencies": {
     "@typegoose/typegoose": "^10.2.0",
     "logform": "^2.5.1",
-    "mongoose": "^6.10.0",
+    "mongoose": "^7.0.0",
     "winston": "^3.8.2"
   }
 }
